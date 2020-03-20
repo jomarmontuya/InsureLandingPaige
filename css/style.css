@@ -1,0 +1,40 @@
+body{
+  font-family: "Karla",sans-serif;
+}
+/* Navigation Section Start */
+.container-fluid {
+  padding: 1% 5% 0.5% 5%;
+}
+#nav-section {
+  font-weight: bold;
+}
+.nav-item {
+  padding: 5px;
+}
+.navbar-nav{
+  text-align: center;
+}
+.active {
+  border: 1px solid;
+}
+.active:hover{
+  background-color: hsl(270, 9%, 17%);
+  color: white !important;
+}
+
+/* Banner Section Banner */
+#banner{
+  background-color: hsl(256, 26%, 20%);
+  position: relative;
+  color: white;
+}
+.pattern-left{
+  position: absolute;
+  left: 0;
+  bottom: -300px;
+}
+.pattern-right{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
