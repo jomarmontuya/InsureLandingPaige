@@ -1,5 +1,6 @@
-html{
-  margin-right: -200px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 body{
   font-family: "Karla",sans-serif;
