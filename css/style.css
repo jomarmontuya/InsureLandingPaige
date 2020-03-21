@@ -31,9 +31,16 @@ body{
 }
 #banner hr {
   float: left;
-  border: 1px solid #fff;
+  border: 1px  solid #fff;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
   width: 20%;
+}
 
+.banner{
+position: relative;
+top: 20%;
 }
 .pattern-left{
   position: absolute;
@@ -60,3 +67,5 @@ body{
   position: relative;
   top: 170px;
 }
+
+body { overflow-x: hidden; width: 100vw;}
