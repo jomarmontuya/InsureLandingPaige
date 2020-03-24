@@ -94,9 +94,7 @@ body {
 /* =================Media Queries================= */
 
 @media (min-width:576px) and (max-width:767px) {
-.intro{
-  text-align: center;
-}
+
 .intro-text{
   padding-right: 0px;
 }
@@ -106,20 +104,22 @@ body {
 }
 
 
-
 }
 
 
 @media (max-width:992px) {
 .intro-text{
-  padding-right: 50px;
+  padding-right: 20px;
 }
 .intro-heading{
   font-size: 3rem;
 }
 .intro {
   margin-top: 5%;
+  text-align: center;
 }
-
+#intro hr{
+  display: none;
+}
 
 }
