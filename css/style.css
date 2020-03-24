@@ -92,6 +92,24 @@ body {
   text-decoration: none;
 }
 /* =================Media Queries================= */
+
+@media (min-width:576px) and (max-width:767px) {
+.intro{
+  text-align: center;
+}
+.intro-text{
+  padding-right: 0px;
+}
+.intro-img{
+  margin: auto;
+  padding: 10%;
+}
+
+
+
+}
+
+
 @media (max-width:992px) {
 .intro-text{
   padding-right: 50px;
@@ -99,5 +117,9 @@ body {
 .intro-heading{
   font-size: 3rem;
 }
+.intro {
+  margin-top: 5%;
+}
+
 
 }
