@@ -63,7 +63,7 @@ body {
 }
 .intro-heading {
   font-family: 'DM Serif Display', serif;
-  font-size: 5vw;
+  font-size: 5rem;
   line-height: 1;
   clear: both;
 
@@ -92,9 +92,12 @@ body {
   text-decoration: none;
 }
 /* =================Media Queries================= */
-@media (max-width:768px) {
+@media (max-width:992px) {
 .intro-text{
   padding-right: 50px;
+}
+.intro-heading{
+  font-size: 3rem;
 }
 
 }
