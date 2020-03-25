@@ -113,7 +113,7 @@ h1, h2 {
   padding: 10px;
 }
 .features-sub-heading {
-  margin: 2.5% 0;
+  margin: 3% 0;
 }
 .features-text {
   padding-right: 25%
@@ -141,6 +141,7 @@ h1, h2 {
 }
 .intro-heading{
   font-size: 2.5rem;
+  margin-top: 200px;
 }
 .intro {
   margin-top: 20%;
@@ -163,10 +164,12 @@ h1, h2 {
   display: none;
 }
 .features-heading {
-  font-size: 5vw;
+  font-size: 2.5rem;
+  margin-top: 40px;
 }
 .features-sub-heading{
-  font-size: 4vw;
+  font-size: 1.5rem;
+  margin: 5% 0;
 }
 .features-text {
   padding: 0 15%;
