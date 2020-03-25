@@ -10,11 +10,14 @@
 /* =================Global Styles================= */
 body {
   font-family: "Karla", sans-serif;
+  background-color: var(--neutral-light-gray);
 }
 .container-fluid {
   padding: 1% 5% 0.5% 5%;
 }
-
+h1, h2 {
+  font-family: 'DM Serif Display', serif;
+}
 /*=================Navigation Section Start=============== */
 #nav-section {
   font-weight: bold;
@@ -62,11 +65,9 @@ body {
   margin-top: 15%;
 }
 .intro-heading {
-  font-family: 'DM Serif Display', serif;
   font-size: 5rem;
   line-height: 1;
   clear: both;
-
 }
 .intro-text {
   line-height: 1.5;
@@ -77,6 +78,8 @@ body {
 .intro-img {
     display: block;
     margin-top: 10%;
+    position: relative;
+    top: 120px;
 }
 .intro-btn {
   border: 1px solid;
@@ -91,35 +94,83 @@ body {
   color: hsl(270, 9%, 17%);
   text-decoration: none;
 }
+/* ===============Features Section Banner===================== */
+#features {
+  margin-top: 10%;
+}
+#features hr {
+  float: left;
+  border-top: 1.5px solid var(--neutral-grayish-violet);
+  width: 10%;
+}
+.features-heading {
+  clear: both;
+  font-size: 3.5rem;
+  color: var(--primary-dark-violet);
+  margin: 2.5% 0;
+}
+.features-items {
+  padding: 10px;
+}
+.features-sub-heading {
+  margin: 2.5% 0;
+}
+.features-text {
+  padding-right: 25%
+}
+
 /* =================Media Queries================= */
-
 @media (min-width:576px) and (max-width:767px) {
-
+/* Intro */
 .intro-text{
   padding-right: 0px;
 }
 .intro-img{
   margin: auto;
   padding: 10%;
+  position: static;
 }
+/* features */
 
+} /* End of Media Queries */
 
-}
-
-
-@media (max-width:992px) {
+@media (max-width:1024px) {
+  /* Intro */
 .intro-text{
   padding-right: 20px;
 }
 .intro-heading{
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .intro {
-  margin-top: 5%;
+  margin-top: 20%;
   text-align: center;
+}
+.intro-img{
+  position: static;
 }
 #intro hr{
   display: none;
 }
 
+/* Features */
+
+#features{
+  margin-top: 0;
+  text-align: center;
 }
+#features hr {
+  display: none;
+}
+.features-heading {
+  font-size: 5vw;
+}
+.features-sub-heading{
+  font-size: 4vw;
+}
+.features-text {
+  padding: 0 15%;
+}
+
+
+ } /* End of Media Queries */
