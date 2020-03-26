@@ -1,8 +1,8 @@
 /* ====================Variables===================== */
-:root{
-  --primary-dark-violet:  hsl(256, 26%, 20%);
+:root {
+  --primary-dark-violet: hsl(256, 26%, 20%);
   --primary-grayish-blue: hsl(216, 30%, 68%);
-  --neutral-dark-violet:  hsl(270, 9%, 17%);
+  --neutral-dark-violet: hsl(270, 9%, 17%);
   --neutral-grayish-violet: hsl(273, 4%, 51%);
   --neutral-light-gray: hsl(0, 0%, 98%);
 }
@@ -12,31 +12,54 @@ body {
   font-family: "Karla", sans-serif;
   background-color: var(--neutral-light-gray);
 }
+
 .container-fluid {
   padding: 1% 5% 0.5% 5%;
 }
+
 h1, h2 {
   font-family: 'DM Serif Display', serif;
 }
+
+/* Buttons */
+.btn {
+  border: 1px solid;
+  color: var(--neutral-light-gray);
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.btn:hover {
+  background-color: var(--neutral-light-gray);
+  color: hsl(270, 9%, 17%);
+  text-decoration: none;
+}
+
 /*=================Navigation Section Start=============== */
 #nav-section {
   font-weight: bold;
 }
+
 .nav-item {
   padding: 5px;
 }
+
 .navbar-nav {
   text-align: center;
 }
+
 .active {
   border: 1px solid;
 }
+
 .active:hover {
   background-color: var(--neutral-dark-violet);
   color: var(--neutral-light-gray) !important;
 }
 
-/* ===============Intro Section Banner======================= */
+/* ===============Intro Section ======================= */
 #intro {
   background-color: var(--primary-dark-violet);
   position: relative;
@@ -49,11 +72,13 @@ h1, h2 {
   border-top: 1.5px solid var(--neutral-light-gray);
   width: 20%;
 }
+
 .pattern-left {
   position: absolute;
   left: 0;
   width: 5%;
 }
+
 .pattern-right {
   position: absolute;
   top: 0;
@@ -61,118 +86,154 @@ h1, h2 {
   z-index: 1;
   width: 25%;
 }
+
 .intro {
   margin-top: 15%;
 }
+
 .intro-heading {
   font-size: 5rem;
   line-height: 1;
   clear: both;
 }
+
 .intro-text {
   line-height: 1.5;
   font-size: 1rem;
   margin-bottom: 30px;
   padding-right: 150px;
 }
+
 .intro-img {
-    display: block;
-    margin-top: 10%;
-    position: relative;
-    top: 120px;
+  display: block;
+  margin-top: 10%;
+  position: relative;
+  top: 130px;
 }
-.intro-btn {
-  border: 1px solid;
-  color: var(--neutral-light-gray);
-  padding: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-.intro-btn:hover {
-  background-color: var(--neutral-light-gray);
-  color: hsl(270, 9%, 17%);
-  text-decoration: none;
-}
-/* ===============Features Section Banner===================== */
+
+/* ===============Features Section ===================== */
 #features {
   margin-top: 10%;
 }
+
 #features hr {
   float: left;
   border-top: 1.5px solid var(--neutral-grayish-violet);
   width: 10%;
 }
+
 .features-heading {
   clear: both;
   font-size: 3.5rem;
   color: var(--primary-dark-violet);
   margin: 2.5% 0;
 }
+
 .features-items {
   padding: 10px;
 }
+
 .features-sub-heading {
   margin: 3% 0;
 }
+
 .features-text {
   padding-right: 25%
 }
 
+/* =============== Cta Section ===================== */
+#cta {
+  margin-top: 5%;
+}
+.cta-content {
+  color: var(--neutral-light-gray);
+  background-color: var(--primary-dark-violet);
+  padding: 2% 0%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta-heading {
+  font-size: 4.5rem;
+}
+
+
 /* =================Media Queries================= */
 @media (min-width:576px) and (max-width:767px) {
-/* Intro */
-.intro-text{
-  padding-right: 0px;
-}
-.intro-img{
-  margin: auto;
-  padding: 10%;
-  position: static;
-}
-/* features */
 
-} /* End of Media Queries */
-
-@media (max-width:1024px) {
   /* Intro */
-.intro-text{
-  padding-right: 20px;
-}
-.intro-heading{
-  font-size: 2.5rem;
-  margin-top: 30%;
-}
-.intro {
-  position: relative;
-  top: 0;
-  text-align: center;
-}
-.intro-img{
-  position: static;
-}
-#intro hr{
-  display: none;
+  .intro-text {
+    padding-right: 0px;
+  }
+
+  .intro-img {
+    margin: auto;
+    padding: 10%;
+    position: static;
+  }
+
+  /* features */
 }
 
-/* Features */
+/* End of Media Queries */
+@media (max-width:1024px) {
+  .btn {
+    font-size: 1.3rem;
+  }
 
-#features{
-  margin-top: 0;
-  text-align: center;
+  /* Intro */
+  .intro-text {
+    padding-right: 20px;
+  }
+
+  .intro-heading {
+    font-size: 2.5rem;
+    margin-top: 30%;
+  }
+
+  .intro {
+    position: relative;
+    top: 0;
+    text-align: center;
+  }
+
+  .intro-img {
+    position: static;
+  }
+
+  #intro hr {
+    display: none;
+  }
+
+  /* Features */
+  #features {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  #features hr {
+    display: none;
+  }
+
+  .features-heading {
+    font-size: 2.5rem;
+    margin-top: 40px;
+  }
+
+  .features-sub-heading {
+    font-size: 1.5rem;
+    margin: 5% 0;
+  }
+
+  .features-text {
+    padding: 0 15%;
+  }
+
+  /* Cta Section */
+  .cta-heading {
+    font-size: 3.5rem;
+  }
 }
-#features hr {
-  display: none;
-}
-.features-heading {
-  font-size: 2.5rem;
-  margin-top: 40px;
-}
-.features-sub-heading{
-  font-size: 1.5rem;
-  margin: 5% 0;
-}
-.features-text {
-  padding: 0 15%;
-}
- } /* End of Media Queries */
+
+/* End of Media Queries */
